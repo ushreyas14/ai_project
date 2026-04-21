@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+myenv/
+.env
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Scratch files / Backup files created during debug session
+fast_test.ipynb
+fast_test.py
+fix_nb.py
+full_code.py
+process_and_train.ipynb.bak
+test_cell1.py
+
+# Data (avoid pushing large image datasets to github)
+data/
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -3,6 +3,7 @@ import numpy as np
 import json
 from PIL import Image
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import tensorflow as tf
 from tensorflow import keras
 
@@ -50,7 +51,7 @@ else:
         
         image = Image.open(uploaded_file).convert('RGB')
         with col1:
-            st.image(image, caption='Uploaded Image', use_column_width=True)
+            st.image(image, caption='Uploaded Image', use_container_width=True)
             
         with st.spinner("Processing..."):
             # Preprocess to match training shape precisely
